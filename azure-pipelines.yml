@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '3b86bcef-dbb7-48cc-926e-d33686bd95a4'
+  dockerRegistryServiceConnection: 'registryzero1conn'
   imageRepository: 'photoengineapp'
   containerRegistry: 'registryzero1.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
