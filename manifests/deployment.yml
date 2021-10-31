@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: photoengineapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: photoengineapp
+  template:
+    metadata:
+      labels:
+        app: photoengineapp 
+    spec:
+      containers:
+        - name: photoengineapp 
+          image: registryzero1.azurecr.io/photoengineapp
+          ports:
+          - containerPort: 80
